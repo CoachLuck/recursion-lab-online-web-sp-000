@@ -11,7 +11,7 @@ function reverseString(s) {
 function isPalindrome(s) {
   let i = 0;
   let idx = s.length - 1;
-  if (idx = i) {
+  if (idx == i) {
     return true;
   }
 
