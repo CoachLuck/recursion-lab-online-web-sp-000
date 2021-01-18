@@ -1,12 +1,7 @@
 // Code your solution here!
 function printString(s) {
   console.log(s[0]);
-  if (s.length > 1) {
-    let str = s.substring(1, s.length);
-    printString(str);
-  } else {
-    return true;
-  }
+  return (s.length > 1) ? s.substring(1, s.length) : true;
 }
 
 function reverseString(s) {
@@ -14,15 +9,12 @@ function reverseString(s) {
 }
 
 function isPalindrome(s) {
+
   return s == reverseString(s);
 }
 
 function addUpTo(arr, idx) {
-  if (idx == 0) {
-    return arr[0];
-  }
-
-  return arr[idx] + addUpTo(arr, idx - 1);
+  return (idx == 0) ? arr[0] : arr[idx] + addUpTo(arr, idx - 1);
 }
 
 function maxOf(arr) {
