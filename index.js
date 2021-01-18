@@ -15,11 +15,7 @@ function isPalindrome(s) {
     return true;
   }
 
-  if (s[i] != s[idx - i]) {
-    return false;
-  }
-
-  return isPalindrome(s.substring(1, idx));
+  return (s[i] != s[idx - i]) ? false : isPalindrome(s.substring(1, idx));
 }
 
 function addUpTo(arr, idx) {
