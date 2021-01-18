@@ -19,7 +19,7 @@ function isPalindrome(s) {
     return false;
   }
 
-  return reverseString(s.substring(1, idx));
+  return isPalindrome(s.substring(1, idx));
 }
 
 function addUpTo(arr, idx) {
