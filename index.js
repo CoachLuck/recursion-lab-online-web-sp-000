@@ -22,7 +22,7 @@ function addUpTo(arr, idx) {
     return arr[0];
   }
 
-  return arr[idx] + addUpTo(arr, idx--);
+  return arr[idx] + addUpTo(arr, idx - 1);
 }
 
 function maxOf(arr) {
