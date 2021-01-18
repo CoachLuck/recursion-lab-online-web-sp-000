@@ -14,7 +14,7 @@ function isPalindrome(s) {
   if (idx = i) {
     return true;
   }
-  
+
   if (s[i] != s[idx - i]) {
     return false;
   }
