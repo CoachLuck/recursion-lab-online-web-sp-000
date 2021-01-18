@@ -9,8 +9,17 @@ function reverseString(s) {
 }
 
 function isPalindrome(s) {
+  let i = 0;
+  let idx = s.length - 1;
+  if (idx = i) {
+    return true;
+  }
+  
+  if (s[i] != s[idx - i]) {
+    return false;
+  }
 
-  return s == reverseString(s);
+  reverseString(s.substring(1, idx));
 }
 
 function addUpTo(arr, idx) {
