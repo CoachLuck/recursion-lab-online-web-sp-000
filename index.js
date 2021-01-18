@@ -1,12 +1,7 @@
 // Code your solution here!
 function printString(s) {
   console.log(s[0]);
-  //return (s.length > 1) ? s.substring(1, s.length) : true;
-  if (s.length > 1) {
-    printString(s.substring(1, s.length));
-  } else {
-    return true;
-  }
+  return (s.length > 1) ? printString(s.substring(1, s.length)) : true;
 }
 
 function reverseString(s) {
